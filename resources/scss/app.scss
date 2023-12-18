@@ -34,7 +34,6 @@ h6
 a
 {
   text-decoration: none;
-  color: $header-text;
 }
 
 ul
@@ -56,7 +55,7 @@ header {
     a
     {
       font-family: 'Open Sans Condensed';
-      color: $header-text !important;
+      color: $header-text;
       font-size: 0.9rem;
     }
 
@@ -79,3 +78,114 @@ header {
     }
 }
 
+/****************************************
+footer
+****************************************/
+
+
+section.footer_top
+{
+    background-color: $primary;
+    color: $white;
+    padding: 3rem 0;
+
+    img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    a
+    {
+      color: $white;
+    }
+
+    .img_box
+    {
+        height: 60px;
+        aspect-ratio: 1;
+    }
+
+    .gap-3
+    {
+        transition: 0.3s;
+        &:hover
+        {
+            transform: scale(1.1);
+        }
+    }
+}
+
+section.footer_middle
+{
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    color: $white;
+    overflow: hidden;
+
+    .container
+    {
+      position: relative;
+      padding: 3rem 0;
+      background-image: url('../img/dc-logo-bg.png');
+      background-repeat: no-repeat;
+      background-position: right;
+
+    }
+
+    a
+    {
+      color: $footer-text;
+      font-size: 0.8rem;
+      display: block;
+      padding: 2px 0;
+      transition: 0.5s;
+
+      &:hover
+      {
+        transition: 0.2s;
+        color: $white;
+      }
+    }
+
+    img
+    {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+}
+
+section.footer_bottom
+{
+    background-color: $bg-footer;
+    color: white;
+    padding: 2rem 0;
+
+    .btn
+    {
+        border: solid 2px $primary;
+        border-radius: 0;
+        color: $white;
+        font-weight: 600;
+        padding: 12px;
+    }
+
+    h4
+    {
+        margin: 0 1rem;
+        color: $primary;
+    }
+
+    img
+    {
+        transition: 0.3s;
+
+        &:hover
+        {
+            transform: scale(1.1);
+        }
+    }
+}
