@@ -24,8 +24,6 @@
     </main>
 
     <style lang="scss">
-        @use '../../assets/style/partials/variables' as *;
-
         .img_container {
             width: 100%;
             aspect-ratio: 1;
@@ -41,7 +39,6 @@
 
         .series_price {
             color: white;
-
             position: absolute;
             height: 100%;
             background-color: #00000080;

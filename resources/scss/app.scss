@@ -9,6 +9,73 @@ $fa-font-path: "../webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-h1 {
-    color: $text-color;
+/****************************************
+general
+****************************************/
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-family: 'Open Sans Condensed';
+}
+
+a
+{
+  text-decoration: none;
+  color: $header-text;
+}
+
+ul
+{
+  list-style: none;
+  padding: 0;
+}
+
+/****************************************
+header
+****************************************/
+
+header {
+    nav img
+    {
+      height: 80px;
+    }
+
+    a
+    {
+      font-family: 'Open Sans Condensed';
+      color: $header-text !important;
+      font-size: 0.9rem;
+    }
+
+    .bt_bar
+    {
+
+      display: none;
+      width: 100%;
+      border-top: solid 5px $primary;
+      position: absolute;
+      bottom: -1rem;
+
+    }
+
+    .jumbotron {
+        background-image: url(../img/jumbotron.jpg);
+        background-size: cover;
+        height: 22rem;
+
+    }
+}
+
