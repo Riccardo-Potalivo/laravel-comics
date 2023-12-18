@@ -11,14 +11,14 @@
                 @foreach ($comics as $comic)
                     <div class="col-6 col-md-4 col-lg-3 col-xxl-2 p-3">
                         <div class="img_container">
-                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                            <div class="series_price">
-                                <p>{{ $comic['price'] }}</p>
-                            </div>
+                            <a href="/product/{{ $loop->index }}">
+                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                                <div class="series_price">
+                                    <p>{{ $comic['price'] }}</p>
+                                </div>
+                            </a>
                         </div>
-                        <a href="/product/{{ $loop->index }}">product</a>
                         <p class="mt-3">{{ $comic['series'] }}</p>
-                        <p>{{ $loop->index }}</p>
                     </div>
                 @endforeach
             </div>
