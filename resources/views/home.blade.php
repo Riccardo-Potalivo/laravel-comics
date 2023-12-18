@@ -16,7 +16,9 @@
                                 <p>{{ $comic['price'] }}</p>
                             </div>
                         </div>
+                        <a href="/product/{{ $loop->index }}">product</a>
                         <p class="mt-3">{{ $comic['series'] }}</p>
+                        <p>{{ $loop->index }}</p>
                     </div>
                 @endforeach
             </div>
