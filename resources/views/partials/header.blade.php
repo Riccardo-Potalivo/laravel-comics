@@ -24,9 +24,9 @@
                     <div class="bt_bar {{ Route::currentRouteName() == 'comics.index' ? 'd-block' : '' }}"></div>
                 </li>
                 <li class="nav-item d-flex align-items-center position-relative">
-                    <a class="nav-link {{ Route::currentRouteName() == 'aaaaa' ? 'active' : '' }}"
-                        href="{{ route('comics.index') }}">MOVIES</a>
-                    <div class="bt_bar {{ Route::currentRouteName() == 'aaaaa' ? 'd-block' : '' }}"></div>
+                    <a class="nav-link {{ Route::currentRouteName() == 'movies.index' ? 'active' : '' }}"
+                        href="{{ route('movies.index') }}">MOVIES</a>
+                    <div class="bt_bar {{ Route::currentRouteName() == 'movies.index' ? 'd-block' : '' }}"></div>
                 </li>
                 <li class="nav-item d-flex align-items-center position-relative">
                     <a class="nav-link {{ Route::currentRouteName() == 'aaaaa' ? 'active' : '' }}"

@@ -19,6 +19,8 @@ Route::get('/', function () {
     return view('home');
 });
 
+// comics
+
 Route::get('/comics', function () {
     $comics = config('db.comics');
     return view('comics.index', compact('comics'));
@@ -36,3 +38,23 @@ Route::get('/comics/{id}', function ($id) {
         return view('comics.show', compact('comic'));
     }
 })->name('comics.show');
+
+// movies
+
+Route::get('/movies', function () {
+    $movies = config('db.movies');
+    return view('movies.index', compact('movies'));
+})->name('movies.index');
+
+Route::get('/movies/{id}', function ($id) {
+    $movies = config('db.movies');
+    $movie = null;
+    foreach ($movies as $item) {
+        if ($item['id'] == $id) {
+            $movie = $item;
+        }
+    }
+    if ($movie) {
+        return view('movies.show', compact('movie'));
+    }
+})->name('movies.show');
