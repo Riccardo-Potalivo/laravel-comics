@@ -15,10 +15,25 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('db.comics');
-    return view('home', compact('comics'));
+    // return redirect(comics);
+    return redirect()->route('comics.index');
+    // return view('home', compact('comics'));
 });
 
-Route::get('/product/{param}', function ($index) {
+Route::get('/comics', function () {
     $comics = config('db.comics');
-    return view('product', $comics[$index]);
-});
+    return view('comics.index', compact('comics'));
+})->name('comics.index');
+
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('db.comics');
+    $comic = null;
+    foreach ($comics as $item) {
+        if ($item['id'] == $id) {
+            $comic = $item;
+        }
+    }
+    if ($comic) {
+        return view('comics.show', compact('comic'));
+    }
+})->name('comics.show');
