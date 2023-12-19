@@ -14,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $comics = config('db.comics');
     // return redirect(comics);
-    return redirect()->route('comics.index');
-    // return view('home', compact('comics'));
+    // return redirect()->route('comics.index');
+    return view('home');
 });
 
 Route::get('/comics', function () {

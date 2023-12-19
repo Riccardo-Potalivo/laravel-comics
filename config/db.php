@@ -127,43 +127,43 @@ return [
     'navEl' => [
         [
             'title' => "CHARACTERS",
-            'url' => "#",
+            'route' => "#",
         ],
         [
             'title' => "COMICS",
-            'url' => "#",
+            'route' => "comics.index",
         ],
         [
             'title' => "MOVIES",
-            'url' => "#",
+            'route' => "#",
         ],
         [
             'title' => "TV",
-            'url' => "#",
+            'route' => "#",
         ],
         [
             'title' => "GAMES",
-            'url' => "#",
+            'route' => "#",
         ],
         [
             'title' => "COLLECTIBLES",
-            'url' => "#",
+            'route' => "#",
         ],
         [
             'title' => "VIDEOS",
-            'url' => "#",
+            'route' => "#",
         ],
         [
             'title' => "FANS",
-            'url' => "#",
+            'route' => "#",
         ],
         [
             'title' => "NEWS",
-            'url' => "#",
+            'route' => "#",
         ],
         [
             'title' => "SHOP",
-            'url' => "#",
+            'route' => "#",
         ],
     ]
 ];

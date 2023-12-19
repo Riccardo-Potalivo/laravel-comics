@@ -8,18 +8,58 @@
     <header>
         <nav class="container d-flex align-items-stretch justify-content-between py-3">
 
-            <a class="navbar-brand" href="/">
+            <a href="/">
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo">
             </a>
 
             <ul class="nav justify-content-end position-relative ">
-                @foreach ($navEl as $el)
-                    <li class="nav-item d-flex align-items-center position-relative">
-                        <a class="nav-link" href="{{ $el['url'] }}">{{ $el['title'] }}</a>
-                        <div class="bt_bar"></div>
-                    </li>
-                @endforeach
+                <li class="nav-item d-flex align-items-center position-relative">
+                    <a class="nav-link {{ Route::currentRouteName() == 'aaaaa' ? 'active' : '' }}"
+                        href="{{ route('comics.index') }}">CHARACTERS</a>
+                    <div class="bt_bar {{ Route::currentRouteName() == 'aaaaa' ? 'd-block' : '' }}"></div>
+                </li>
+                <li class="nav-item d-flex align-items-center position-relative">
+                    <a class="nav-link {{ Route::currentRouteName() == 'comics.index' ? 'active' : '' }}"
+                        href="{{ route('comics.index') }}">COMICS</a>
+                    <div class="bt_bar {{ Route::currentRouteName() == 'comics.index' ? 'd-block' : '' }}"></div>
+                </li>
+                <li class="nav-item d-flex align-items-center position-relative">
+                    <a class="nav-link {{ Route::currentRouteName() == 'aaaaa' ? 'active' : '' }}"
+                        href="{{ route('comics.index') }}">MOVIES</a>
+                    <div class="bt_bar {{ Route::currentRouteName() == 'aaaaa' ? 'd-block' : '' }}"></div>
+                </li>
+                <li class="nav-item d-flex align-items-center position-relative">
+                    <a class="nav-link {{ Route::currentRouteName() == 'aaaaa' ? 'active' : '' }}"
+                        href="{{ route('comics.index') }}">TV</a>
+                    <div class="bt_bar {{ Route::currentRouteName() == 'aaaaa' ? 'd-block' : '' }}"></div>
+                </li>
+                <li class="nav-item d-flex align-items-center position-relative">
+                    <a class="nav-link {{ Route::currentRouteName() == 'aaaaa' ? 'active' : '' }}"
+                        href="{{ route('comics.index') }}">GAMES</a>
+                    <div class="bt_bar {{ Route::currentRouteName() == 'aaaaa' ? 'd-block' : '' }}"></div>
+                </li>
+                <li class="nav-item d-flex align-items-center position-relative">
+                    <a class="nav-link {{ Route::currentRouteName() == 'aaaaa' ? 'active' : '' }}"
+                        href="{{ route('comics.index') }}">COLLECTIBLES</a>
+                    <div class="bt_bar {{ Route::currentRouteName() == 'aaaaa' ? 'd-block' : '' }}"></div>
+                </li>
+                <li class="nav-item d-flex align-items-center position-relative">
+                    <a class="nav-link {{ Route::currentRouteName() == 'aaaaa' ? 'active' : '' }}"
+                        href="{{ route('comics.index') }}">VIDEOS</a>
+                    <div class="bt_bar {{ Route::currentRouteName() == 'aaaaa' ? 'd-block' : '' }}"></div>
+                </li>
+                <li class="nav-item d-flex align-items-center position-relative">
+                    <a class="nav-link {{ Route::currentRouteName() == 'aaaaa' ? 'active' : '' }}"
+                        href="{{ route('comics.index') }}">FANS</a>
+                    <div class="bt_bar {{ Route::currentRouteName() == 'aaaaa' ? 'd-block' : '' }}"></div>
+                </li>
+                <li class="nav-item d-flex align-items-center position-relative">
+                    <a class="nav-link {{ Route::currentRouteName() == 'aaaaa' ? 'active' : '' }}"
+                        href="{{ route('comics.index') }}">NEWS</a>
+                    <div class="bt_bar {{ Route::currentRouteName() == 'aaaaa' ? 'd-block' : '' }}"></div>
+                </li>
             </ul>
+
 
         </nav>
         <div class="jumbotron">

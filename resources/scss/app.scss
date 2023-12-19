@@ -55,8 +55,13 @@ header {
     a
     {
       font-family: 'Open Sans Condensed';
-      color: $header-text;
+      color: $header-text !important;
       font-size: 0.9rem;
+
+    }
+
+    .active {
+        color: $primary !important;
     }
 
     .bt_bar
@@ -75,6 +80,16 @@ header {
         background-size: cover;
         height: 22rem;
 
+    }
+
+    li:hover .bt_bar
+    {
+      display: block;
+    }
+
+    li:hover a
+    {
+      color: $primary !important;
     }
 }
 
